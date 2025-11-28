@@ -1,0 +1,62 @@
+/* Tailwind base layers */
+@import "tailwindcss";
+
+/* Global background */
+body {
+  background: linear-gradient(to bottom right, #f5f7ff, #eef1ff);
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+
+/* Centering the app */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* Simple glowing card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 18px;
+  width: 900px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Input styling */
+.text-input {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 18px;
+  outline: none;
+  background: white;
+}
+
+.text-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99,102,241,0.4);
+}
+
+/* Button */
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  transform: scale(1.02);
+}
